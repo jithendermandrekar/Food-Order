@@ -1,0 +1,130 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic page styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #FF6347; /* Tomato color */
+    color: white;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Main container for the content */
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Menu section styling */
+.menu {
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 320px;
+    overflow: hidden;
+}
+
+.menu h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.menu-item {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.menu-item input {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.menu-item label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.menu-item span {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Button and order summary */
+.order-summary {
+    text-align: center;
+}
+
+.order-btn {
+    background-color: #FF6347;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.order-btn:hover {
+    background-color: #e55347;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .menu-item img {
+        width: 40px;
+        height: 40px;
+    }
+}
